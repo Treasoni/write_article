@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"c:\\\\code\\\\write_article\" diff HEAD~1..HEAD)",
+      "Bash(git -C \"c:\\\\code\\\\write_article\" config --list)",
+      "Bash(git -C \"c:\\\\code\\\\write_article\" remote -v)",
+      "mcp__github__get_repository_tree",
+      "Bash(git -C \"c:\\\\code\\\\write_article\" ls-tree -r --name-only HEAD)",
+      "Bash(ls -la \"C:\\\\办公\\\\Study-Notes\\\\AI实战\")",
+      "Read(//c/办公/Study-Notes/AI实战/**)",
+      "Bash(mkdir -p \"c:/code/write_article/.claude/skills/read-template\" \"c:/code/write_article/.claude/skills/write-article\" \"c:/code/write_article/.claude/skills/check-format\" \"c:/code/write_article/.claude/agents/template-checker\" \"c:/code/write_article/.claude/agents/article-checker\" \"c:/code/write_article/templates\" \"c:/code/write_article/materials\" \"c:/code/write_article/output\" \"c:/code/write_article/reports\" \".learnings\")",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)"
+    ],
+    "additionalDirectories": [
+      "c:\\code\\write_article\\.claude\\skills"
+    ]
+  }
+}
