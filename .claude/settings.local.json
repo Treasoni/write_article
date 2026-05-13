@@ -11,7 +11,9 @@
       "Bash(mkdir -p \"c:/code/write_article/.claude/skills/read-template\" \"c:/code/write_article/.claude/skills/write-article\" \"c:/code/write_article/.claude/skills/check-format\" \"c:/code/write_article/.claude/agents/template-checker\" \"c:/code/write_article/.claude/agents/article-checker\" \"c:/code/write_article/templates\" \"c:/code/write_article/materials\" \"c:/code/write_article/output\" \"c:/code/write_article/reports\" \".learnings\")",
       "Bash(git add *)",
       "Bash(git commit *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(bash scripts/lint.sh)",
+      "Read(//tmp/**)"
     ],
     "additionalDirectories": [
       "c:\\code\\write_article\\.claude\\skills"
