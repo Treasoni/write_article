@@ -1,4 +1,17 @@
 {
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '[Hook] 文件已写入，请检查是否需要启动审核流程'"
+          }
+        ]
+      }
+    ]
+  },
   "permissions": {
     "allow": [
       "Bash(git -C \"c:\\\\code\\\\write_article\" diff HEAD~1..HEAD)",
@@ -13,7 +26,8 @@
       "Bash(git commit *)",
       "Bash(git push *)",
       "Bash(bash scripts/lint.sh)",
-      "Read(//tmp/**)"
+      "Read(//tmp/**)",
+      "Bash(dir \"c:\\\\code\\\\write_article\")"
     ],
     "additionalDirectories": [
       "c:\\code\\write_article\\.claude\\skills"

@@ -6,6 +6,8 @@
 
 ## Phase 0：初始化询问
 
+**【强制】进入此阶段前，必须调用 Read 工具读取 `.learnings/SETUP_TODO.md`，确认当前进度。**
+
 **强制：必须依次询问用户以下问题，不可跳过。**
 
 1. **是否有模板？**
@@ -32,7 +34,9 @@
    - 向用户展示完整的 5 个 Phase 流程概要
    - 确认后开始执行，**强制按流程走，绝不允许跳步**
 
-**Phase 0 完成时，更新状态文件：**
+**Phase 0 完成时：**
+1. 调用 Write 工具更新 `.learnings/SETUP_TODO.md`，将 Phase 0 的所有步骤打勾
+2. 更新状态文件 `.current_phase.json`
 
 创建或更新 `.current_phase.json`：
 ```json
@@ -52,6 +56,8 @@
 ---
 
 ## Phase 1：模板处理
+
+**【强制】进入此阶段前，必须调用 Read 工具读取 `.learnings/SETUP_TODO.md`，确认 Phase 0 已完成。**
 
 **目标**：生成一个准确的、可供 write-article 使用的结构化模板文档。
 
@@ -77,7 +83,9 @@
        → 进入 Phase 2
 ```
 
-**Phase 1 完成时打印状态框：**
+**Phase 1 完成时：**
+1. 调用 Write 工具更新 `.learnings/SETUP_TODO.md`，将 Phase 1 的所有步骤打勾
+2. 打印状态框
 ```
 ┌──────────────────────────────────────┐
 │ ✅ Phase 1 完成：模板处理             │
@@ -91,6 +99,8 @@
 ---
 
 ## Phase 2：资料收集
+
+**【强制】进入此阶段前，必须调用 Read 工具读取 `.learnings/SETUP_TODO.md`，确认 Phase 1 已完成。**
 
 **目标**：整理用户资料，必要时上网搜索补充，形成结构化的资料库。
 
@@ -122,7 +132,9 @@
    进入 Phase 3
 ```
 
-**Phase 2 完成时打印状态框：**
+**Phase 2 完成时：**
+1. 调用 Write 工具更新 `.learnings/SETUP_TODO.md`，将 Phase 2 的所有步骤打勾
+2. 打印状态框
 ```
 ┌──────────────────────────────────────────┐
 │ ✅ Phase 2 完成：资料收集                  │
@@ -136,6 +148,8 @@
 ---
 
 ## Phase 3：文章写作 & 审核循环
+
+**【强制】进入此阶段前，必须调用 Read 工具读取 `.learnings/SETUP_TODO.md`，确认 Phase 2 已完成。**
 
 **目标**：生成符合模板格式、内容充实的 .docx 文章。
 
@@ -169,7 +183,9 @@
        → 进入 Phase 4
 ```
 
-**Phase 3 完成时打印状态框：**
+**Phase 3 完成时：**
+1. 调用 Write 工具更新 `.learnings/SETUP_TODO.md`，将 Phase 3 的所有步骤打勾
+2. 打印状态框
 ```
 ┌──────────────────────────────────────────┐
 │ ✅ Phase 3 完成：文章定稿                  │
@@ -184,7 +200,13 @@
 
 ## Phase 4：自我学习
 
+**【强制】进入此阶段前，必须调用 Read 工具读取 `.learnings/SETUP_TODO.md`，确认 Phase 3 已完成。**
+
 **目标**：回顾本次会话，沉淀经验，防止以后犯同样的错误。
+
+**Phase 4 完成时：**
+1. 调用 Write 工具更新 `.learnings/SETUP_TODO.md`，将 Phase 4 的所有步骤打勾
+2. 更新 `.current_phase.json` 为 completed
 
 ```
 1. 调用 Skill({skill: "digest"})
